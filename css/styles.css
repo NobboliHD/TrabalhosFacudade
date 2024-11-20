@@ -1,0 +1,123 @@
+:root{
+    --color-first:#662664;
+    --color-second:white;
+    --color-backgruond:#FFDBD7;
+    --color-letras:black;
+    --color-backgroudsecond:rgba(255, 255, 255, 0.5);
+    --color-lest:rgba(255, 255, 255, 0);
+    --height-page:1200px;
+}
+body{ 
+    background-image: url(/imagens/banerTelaHome.jpeg);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center;  
+    
+/*    max-width: ;*/
+    max-height:var(--height-page) ;
+}
+.total-page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*botoes com fundo (dos botoes) */
+.header-page{
+    position: relative;
+    top:-149px;
+    left: 1px;
+
+}
+.header-page .symbol{
+    height: 150px;
+    width: 150px;
+    z-index: 0;
+    display: flex;
+}
+.background{
+    height: 150px;
+    background-color:var(--color-first);
+    display: block;
+    z-index: -1;
+}
+.button-first {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   position: relative;
+   top: -90px;
+   margin-left: 80px;
+}
+.btn{
+    background-color: var(--color-lest);
+    border: none;
+    color: var(--color-second);
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 2;
+}
+.btn:hover{
+    color: var(--color-letras);
+    text-decoration: underline;
+}
+/* tela home */
+.list-banners{
+    display: flex;
+    justify-content: center;
+    gap: 20px 30px;
+    flex-wrap: wrap;
+    
+}
+.wrapper-banner{
+    display: flex;
+    background-color: var(--color-backgroudsecond);
+    cursor: pointer;
+    transition: 200ms transform ease-in-out;    
+}
+
+.wrapper-banner:hover{
+    transform: scale(1.1);
+    transition: 200ms transform cubic-bezier(0.42, 0, 0.58, 2.04);
+}
+
+.wrapper-banner .capition{
+    font-size: 22px;
+    text-align: center;
+
+}
+.wrapper-banner .text{
+    font-size: 22px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    top: -10px;
+    left: 5px;
+    
+}
+.wrapper-banner .banner{
+    width: 300px;
+    height: 300px;
+    border: 3px solid var(--color-first);
+}
+/*fundo da pagina*/
+/*.End-page{
+}*/
+.End-page .fundo{
+    height: 100px; 
+    background-color: #cfcfcfda; 
+    margin-top: auto; 
+    text-align: center; 
+    padding: 20px; 
+    color: white; 
+}
+.itenslinks{
+    display: flex;
+    position: relative;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    top: 120px;
+
+    
+}
